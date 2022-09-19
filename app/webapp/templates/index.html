@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>To-do</title>
+</head>
+<body>
+  <div class="container">
+      <h2>My to-do list </h2>
+      {% if to_does%}
+          {% for to_do in to_does%}
+            <h3>Title - {{to_do.title}}</h3>
+            <p>Text - {{to_do.text}}</p>
+          {% endfor %}
+      {% else %}
+        <h2>Add to to-do list</h2>
+      {% endif %}
+      <a href="#">Add to-do</a>
+  </div>
+</body>
+</html>
