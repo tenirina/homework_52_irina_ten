@@ -4,7 +4,7 @@ from django.db import models
 class ToDo(models.Model):
     CHOICES = (
         ("new", "New"),
-        ("process", "In the process"),
+        ("process", "Process"),
         ("made", "Made")
     )
     text = models.TextField(verbose_name="Description", max_length=500, null=False, blank=False)

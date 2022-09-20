@@ -38,7 +38,7 @@
                     <div class="row g-2 align-items-start">
                        <select class="form-select"  name="select">
                            {% for el in choices %}
-                                <option value={{el}}>{{el}}</option>
+                                <option value={{el.0}}>{{el.1}}</option>
                            {% endfor %}
                        </select>
                     </div>

@@ -6,7 +6,6 @@ from webapp.models import ToDo
 def add_view(request):
     if request.method == "GET":
         choices = ToDo.CHOICES
-        choices = list(map(lambda el: el[1], choices))
         return render(request, 'add.html', context={'choices': choices})
     todo_data = {
         'text': request.POST.get('text'),
