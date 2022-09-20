@@ -1,11 +1,15 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <title>To-do</title>
 </head>
 <body>
-      <p>Text - {{todo.text}}</p>
-       <p>Status - {{todo.status}}</p>
+      <div class="container">
+          <p>Text - {{todo.text}}</p>
+          <p>Status - {{todo.status}}</p>
+      </div>
 </body>
 </html>
