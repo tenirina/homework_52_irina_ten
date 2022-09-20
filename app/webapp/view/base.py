@@ -4,8 +4,8 @@ from webapp.models import ToDo
 
 
 def index_view(request):
-    to_do = ToDo.objects.all()
+    to_does = ToDo.objects.all()
     context = {
-        "to_do": to_do
+        "to_does": to_does
     }
     return render(request, "index.html", context)

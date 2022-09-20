@@ -12,7 +12,7 @@
   "model": "webapp.todo",
   "pk": 2,
   "fields": {
-    "text": "Read book",
+    "text": "Sleep",
     "status": "process",
     "completion_data": null
   }

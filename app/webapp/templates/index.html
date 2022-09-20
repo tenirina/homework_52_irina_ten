@@ -11,13 +11,13 @@
       <h2>My to-do list </h2>
       {% if to_does%}
           {% for to_do in to_does%}
-            <h3>Title - {{to_do.title}}</h3>
-            <p>Text - {{to_do.text}}</p>
+            <h3>Status - {{to_do.status}}</h3>
+            <h4>Text - {{to_do.text}}</h4>
           {% endfor %}
       {% else %}
         <h2>Add to to-do list</h2>
       {% endif %}
-      <a href="#">Add to-do</a>
+      <a href="/add_todo">Add to-do</a>
   </div>
 </body>
 </html>
